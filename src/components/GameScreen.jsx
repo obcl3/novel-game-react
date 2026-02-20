@@ -40,7 +40,7 @@ export default function GameScreen() {
   if (!currentScene) return null;
 
   const bgImagePath = currentScene.bgImage 
-    ? `/src/assets/images/${currentScene.bgImage}`
+    ? `/assets/images/${currentScene.bgImage}`
     : null;
 
   return (
