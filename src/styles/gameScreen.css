@@ -94,32 +94,32 @@
 
 @media (max-width: 768px) {
   .btn-next {
-    bottom: 80px;
+    bottom: 250px;
     right: 15px;
-    padding: 10px 16px;
+    padding: 10px 15px;
     font-size: 12px;
   }
 
   .btn-menu-toggle {
     top: 15px;
     right: 15px;
-    padding: 6px 10px;
-    font-size: 11px;
+    padding: 8px 12px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
   .btn-next {
-    bottom: 70px;
-    right: 10px;
+    bottom: 210px;
+    right: 12px;
     padding: 8px 12px;
     font-size: 11px;
   }
 
   .btn-menu-toggle {
-    top: 10px;
-    right: 10px;
-    padding: 5px 8px;
-    font-size: 10px;
+    top: 12px;
+    right: 12px;
+    padding: 6px 10px;
+    font-size: 11px;
   }
 }
