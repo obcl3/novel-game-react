@@ -82,8 +82,26 @@
 
 @media (max-width: 768px) {
   .text-window {
-    height: 240px;
-    padding: 25px 20px;
+    height: 250px;
+    padding: 30px 20px;
+  }
+
+  .character-name {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .character-text {
+    font-size: 14px;
+    line-height: 1.6;
+    max-height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-window {
+    height: 220px;
+    padding: 20px 15px;
   }
 
   .character-name {
@@ -93,25 +111,7 @@
 
   .character-text {
     font-size: 13px;
-    line-height: 1.6;
-    max-height: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  .text-window {
-    height: 200px;
-    padding: 18px 15px;
-  }
-
-  .character-name {
-    font-size: 13px;
-    margin-bottom: 5px;
-  }
-
-  .character-text {
-    font-size: 12px;
     line-height: 1.5;
-    max-height: 100px;
+    max-height: 150px;
   }
 }

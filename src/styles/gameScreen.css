@@ -94,7 +94,7 @@
 
 @media (max-width: 768px) {
   .btn-next {
-    bottom: 250px;
+    bottom: 25px;
     right: 15px;
     padding: 10px 15px;
     font-size: 12px;
@@ -110,7 +110,7 @@
 
 @media (max-width: 480px) {
   .btn-next {
-    bottom: 210px;
+    bottom: 20px;
     right: 12px;
     padding: 8px 12px;
     font-size: 11px;
