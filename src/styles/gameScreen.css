@@ -94,16 +94,32 @@
 
 @media (max-width: 768px) {
   .btn-next {
-    bottom: 15px;
-    right: 20px;
-    padding: 10px 20px;
+    bottom: 80px;
+    right: 15px;
+    padding: 10px 16px;
     font-size: 12px;
   }
 
   .btn-menu-toggle {
     top: 15px;
     right: 15px;
-    padding: 6px 12px;
-    font-size: 12px;
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-next {
+    bottom: 70px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .btn-menu-toggle {
+    top: 10px;
+    right: 10px;
+    padding: 5px 8px;
+    font-size: 10px;
   }
 }

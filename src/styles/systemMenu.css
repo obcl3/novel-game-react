@@ -70,13 +70,28 @@
 
 @media (max-width: 768px) {
   .system-menu {
-    min-width: 280px;
-    padding: 30px 20px;
-    gap: 12px;
+    min-width: 90%;
+    max-width: 90vw;
+    padding: 20px 15px;
+    gap: 10px;
   }
 
   .btn-menu {
-    padding: 10px 16px;
-    font-size: 13px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .system-menu {
+    min-width: 85%;
+    max-width: 85vw;
+    padding: 15px 12px;
+    gap: 8px;
+  }
+
+  .btn-menu {
+    padding: 8px 12px;
+    font-size: 11px;
   }
 }

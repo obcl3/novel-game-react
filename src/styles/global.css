@@ -27,6 +27,15 @@ html, body, #root {
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 14px 40px;
+  min-width: 120px;
+}
+
+@media (max-width: 480px) {
+  .btn {
+    font-size: 14px;
+    padding: 12px 24px;
+    min-width: 100px;
+  }
 }
 
 .btn-primary {
