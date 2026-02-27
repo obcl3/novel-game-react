@@ -48,24 +48,26 @@
 }
 
 .btn-next {
-  position: absolute;
-  bottom: 30px;
-  right: 50px;
-  padding: 12px 24px;
-  background: rgba(135, 206, 235, 0.8);
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  padding: 12px 20px;
+  background: rgba(135, 206, 235, 0.9);
   border: 1px solid #87ceeb;
-  color: #fff;
+  color: #000;
   font-size: 14px;
+  font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
-  z-index: 20;
+  z-index: 50;
+  pointer-events: auto;
 }
 
 .btn-next:hover {
   background: rgba(135, 206, 235, 1);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(135, 206, 235, 0.4);
+  box-shadow: 0 5px 15px rgba(135, 206, 235, 0.6);
 }
 
 .btn-next:active {
@@ -73,62 +75,48 @@
 }
 
 .btn-menu-toggle {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #aaa;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
-  z-index: 20;
+  z-index: 50;
+  pointer-events: auto;
 }
 
 .btn-menu-toggle:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.3);
   color: #fff;
 }
 
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 1024px) {
   .btn-next {
-    bottom: 25px;
+    bottom: 50px;
     right: 15px;
     padding: 10px 15px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .btn-menu-toggle {
     top: 15px;
     right: 15px;
     padding: 8px 12px;
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
-@media (max-width: 480px) {
-  .btn-next {
-    bottom: 20px;
-    right: 12px;
-    padding: 8px 12px;
-    font-size: 11px;
-  }
-
-  .btn-menu-toggle {
-    top: 12px;
-    right: 12px;
-    padding: 6px 10px;
-    font-size: 11px;
-  }
-}
-
-/* Portrait mode optimization */
-@media (orientation: portrait) and (max-height: 800px) {
+/* Phones (landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
   .btn-next {
     bottom: 15px;
-    right: 10px;
+    right: 12px;
     padding: 8px 12px;
     font-size: 11px;
   }
@@ -137,6 +125,45 @@
     top: 10px;
     right: 10px;
     padding: 6px 10px;
-    font-size: 10px;
+    font-size: 11px;
+  }
+}
+
+/* Phones (portrait) */
+@media (max-width: 768px) and (orientation: portrait) {
+  .btn-next {
+    bottom: 30px;
+    right: 12px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .btn-menu-toggle {
+    top: 12px;
+    right: 12px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) and (orientation: portrait) {
+  .btn-next {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    padding: 10px 12px;
+    font-size: 11px;
+    z-index: 50;
+    pointer-events: auto;
+  }
+
+  .btn-menu-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 11px;
+    z-index: 50;
   }
 }
