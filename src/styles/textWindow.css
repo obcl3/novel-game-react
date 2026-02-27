@@ -147,8 +147,8 @@
 /* Small phones */
 @media (max-width: 480px) and (orientation: portrait) {
   .text-window {
-    height: 50%;
-    padding: 18px 14px 90px 14px;
+    height: 58%;
+    padding: 18px 14px 120px 14px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -167,19 +167,20 @@
 
   .character-text {
     font-size: 13px;
-    line-height: 1.6;
-    min-height: 80px;
-    max-height: 180px;
+    line-height: 1.7;
+    min-height: 100px;
+    max-height: 280px;
     color: #e8e8e8;
     overflow-y: auto;
+    padding-right: 8px;
   }
 }
 
 /* Very small phones (iPhone SE size) */
 @media (max-height: 600px) and (orientation: portrait) {
   .text-window {
-    height: 55%;
-    padding: 16px 12px 85px 12px;
+    height: 60%;
+    padding: 16px 12px 110px 12px;
   }
 
   .character-name {
@@ -189,8 +190,10 @@
 
   .character-text {
     font-size: 12px;
-    line-height: 1.4;
-    min-height: 60px;
-    max-height: 120px;
+    line-height: 1.5;
+    min-height: 80px;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 6px;
   }
 }
